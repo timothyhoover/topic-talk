@@ -1,6 +1,31 @@
-<form name="contact" netlify netlify-honeypot="bot-field" hidden>
-  <input type="text" name="nombre" />
-  <input type="text" name="apellidos" />
-  <input type="email" name="email" />
-  <textarea name="mensaje"></textarea>
+<form
+  name="contact"
+  method="POST"
+  data-netlify="true"
+  data-netlify-honeypot="bot-field"
+>
+  <input type="hidden" name="contact" value="contact")/>
+  <input
+    id='firstName'
+    placeholder='Name'
+    name='nobmre'
+    label='Nombre'
+  />
+  <input
+    placeholder='Apellidos'
+    label='Apellidos'
+    name='apellidos'
+  />
+  <input
+    type="email"
+    placeholder='Correo Electrónico'
+    label='Correo Electrónico'
+    name='email'
+  />
+  <textarea
+    placeholder='Mensaje'
+    label='Mensaje'
+    name='mensaje'
+    type='textarea'
+  />
 </form>
