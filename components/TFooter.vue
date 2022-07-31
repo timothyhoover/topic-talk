@@ -35,6 +35,7 @@ footer(class='bg-tt-light py-5 xs:py-12 mt-5 md:mt-10')
       form(
         name="contact"
         method="POST"
+        action="/"
         data-netlify="true" 
         data-netlify-honeypot="bot-field"
         class='order-2 md:order-4 shadow rounded-lg p-5 xs:p-10 bg-white w-full md:w-3/6 space-y-4'
