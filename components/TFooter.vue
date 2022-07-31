@@ -43,7 +43,7 @@ footer(class='bg-tt-light py-5 xs:py-12 mt-5 md:mt-10')
         t-input(
           v-model='formData.name'
           placeholder='Name'
-          name='nobmre'
+          name='nombre'
           label='Nombre'
         )
         t-input(
