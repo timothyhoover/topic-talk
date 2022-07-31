@@ -33,7 +33,8 @@ footer(class='bg-tt-light py-5 xs:py-12 mt-5 md:mt-10')
       // social media icons
       social-icons(class='md:hidden')
       form(
-        @submit.prevent='submitForm'
+        method="POST"
+        netlify
         class='order-2 md:order-4 shadow rounded-lg p-5 xs:p-10 bg-white w-full md:w-3/6 space-y-4'
       )
         t-input#firstName(
@@ -47,6 +48,13 @@ footer(class='bg-tt-light py-5 xs:py-12 mt-5 md:mt-10')
           placeholder='Apellidos'
           label='Apellidos'
           name='apellidos'
+        )
+        t-input(
+          v-model='formData.email'
+          type="email"
+          placeholder='Correo Electrónico'
+          label='Correo Electrónico'
+          name='email'
         )
         t-textarea(
           v-model='formData.message'

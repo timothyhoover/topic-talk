@@ -60,7 +60,8 @@ div(class='w-full flex flex-col items-center')
       currencySymbol='€'
     )
   div(class='flex flex-col justify-center items-start p-10')
-    button(
+    a(
+      href="/#contacto"
       class='px-4 py-3 border-2 border-black rounded-md hover:bg-zinc-100 transition-all duration-200'
     ) Pide Información
   div(class='border-2 border-dashed border-tt-light w-4/6')
