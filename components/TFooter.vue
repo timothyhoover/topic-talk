@@ -15,7 +15,7 @@ const submitForm = () => {
 footer(class='bg-tt-light py-5 xs:py-12 mt-5 md:mt-10')
   div(class='max-w-screen-xl mx-auto px-4')
     div(class='flex flex-col md:flex-row')
-      // important links
+      //-important links
       div(class='md:hidden flex-1 order-1 md:w-3/6 space-y-10')
         h3(class='flex-1 text-2xl xs:text-4xl text-white font-bold py-5') Contáctanos y cuéntanos lo que necesitas
       div(class='md:hidden order-3 md:order-2 py-5 flex-1 space-y-2 text-xl text-tt-dark')
@@ -30,7 +30,7 @@ footer(class='bg-tt-light py-5 xs:py-12 mt-5 md:mt-10')
           p E-mail: info@topictalkingles.com
           p Whatsapp: (+34) 722 297 641
         social-icons(class='hidden md:flex')
-      // social media icons
+      //-social media icons
       social-icons(class='md:hidden')
       form(
         name="contact"
@@ -39,7 +39,7 @@ footer(class='bg-tt-light py-5 xs:py-12 mt-5 md:mt-10')
         data-netlify-honeypot="bot-field"
         class='order-2 md:order-4 shadow rounded-lg p-5 xs:p-10 bg-white w-full md:w-3/6 space-y-4'
       )
-        input(type="hidden" name="contact" value="contact")
+        input(type="hidden" name="form-name" value="contact")
         t-input(
           v-model='formData.name'
           placeholder='Name'
