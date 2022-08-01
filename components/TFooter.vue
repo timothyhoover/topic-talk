@@ -1,16 +1,3 @@
-<script setup>
-const formData = reactive({
-  name: '',
-  lastName: '',
-  email: '',
-  message: ''
-})
-
-const submitForm = () => {
-  console.log(formData)
-}
-</script>
-
 <template lang="pug">
 footer(class='bg-tt-light py-5 xs:py-12 mt-5 md:mt-10')
   div(class='max-w-screen-xl mx-auto px-4')
@@ -35,33 +22,28 @@ footer(class='bg-tt-light py-5 xs:py-12 mt-5 md:mt-10')
       form(
         name="contact"
         method="POST"
-        action="/"
+        action="/success"
         data-netlify="true" 
-        data-netlify-honeypot="bot-field"
         class='order-2 md:order-4 shadow rounded-lg p-5 xs:p-10 bg-white w-full md:w-3/6 space-y-4'
       )
         input(type="hidden" name="form-name" value="contact")
         t-input(
-          v-model='formData.name'
           placeholder='Name'
           name='nombre'
           label='Nombre'
         )
         t-input(
-          v-model='formData.lastName'
           placeholder='Apellidos'
           label='Apellidos'
           name='apellidos'
         )
         t-input(
-          v-model='formData.email'
           type="email"
           placeholder='Correo Electrónico'
           label='Correo Electrónico'
           name='email'
         )
         t-textarea(
-          v-model='formData.message'
           placeholder='Mensaje'
           label='Mensaje'
           name='mensaje'
