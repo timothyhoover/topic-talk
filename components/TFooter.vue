@@ -20,30 +20,31 @@ footer(class='bg-tt-light py-5 xs:py-12 mt-5 md:mt-10')
       //-social media icons
       social-icons(class='md:hidden')
       form(
-        name="contact"
-        method="POST"
-        action="/success"
-        data-netlify="true" 
+        name="contact" action="/success" method="POST" data-netlify="true"
         class='order-2 md:order-4 shadow rounded-lg p-5 xs:p-10 bg-white w-full md:w-3/6 space-y-4'
       )
         input(type="hidden" name="form-name" value="contact")
         t-input(
+          id="name"
           placeholder='Name'
           name='nombre'
           label='Nombre'
         )
         t-input(
+          id="apellidos"
           placeholder='Apellidos'
           label='Apellidos'
           name='apellidos'
         )
         t-input(
+          id="email"
           type="email"
           placeholder='Correo Electrónico'
           label='Correo Electrónico'
           name='email'
         )
         t-textarea(
+          id="mensaje"
           placeholder='Mensaje'
           label='Mensaje'
           name='mensaje'
