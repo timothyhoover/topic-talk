@@ -2,7 +2,7 @@
 
 <template lang="pug">
 div(class='flex-1 order-4 md:order-3 flex max-w-xs py-5 items-center space-x-5')
-  a(href='#' class='text-tt hover:text-tt-dark transition-colors duration-200')
+  a(href='https://www.facebook.com/topictalkingles' target="_blank" class='text-tt hover:text-tt-dark transition-colors duration-200')
     svg(
       fill='currentColor'
       class='w-10 h-10 text-xl hover:text-tt-dark transition-colors duration-200'
@@ -13,7 +13,7 @@ div(class='flex-1 order-4 md:order-3 flex max-w-xs py-5 items-center space-x-5')
         d='M1343 12v264h-157q-86 0-116 36t-30 108v189h293l-39 296h-254v759h-306v-759h-255v-296h255v-218q0-186 104-288.5t277-102.5q147 0 228 12z'
       )
   a(
-    href='#'
+    href='https://www.instagram.com/topictalkingles/' target="_blank"
     class='w-10 h-10 text-tt hover:text-tt-dark transition-colors duration-200'
   )
     svg(
