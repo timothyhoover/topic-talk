@@ -1,4 +1,19 @@
 <script setup>
+useHead({
+  title: "Topic Talk",
+  meta: [
+    { charset: 'utf-8' },
+    {
+  
+      name: "Topic Talk Ingles",
+      content: "Clases de inglés",
+    },
+  ],
+  link: [
+    { rel: "icon", type: "image/x-icon", href: "/favicon.ico" },
+  ],
+});
+
 const details = {
   card1: ['Refuerzo escolar', 'Preparación de exámenes', 'Business English'],
   card2: [
